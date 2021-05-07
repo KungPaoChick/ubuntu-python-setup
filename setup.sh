@@ -18,3 +18,6 @@ sudo python3.9 get-pip.py
 # aliasing python and pip
 echo "alias python='python3.9'" >> ~/.bash_aliases
 echo "alias pip='pip3.9'" >> ~/.bash_aliases
+
+# deletes get-pip.py
+rm -rf get-pip.py
