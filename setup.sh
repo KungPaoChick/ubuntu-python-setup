@@ -25,3 +25,4 @@ echo "alias pip='pip3.9'" >> ~/.bash_aliases
 # deletes get-pip.py
 rm -rf get-pip.py
 
+printf "\n\nPython3.9 and pip has been installed successfully. Enjoy! :)\n\n"
