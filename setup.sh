@@ -9,6 +9,9 @@ sudo apt install -y curl
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 
+# installs python3-testresources
+sudo apt install -y python3-testresources
+
 # installs python3.9 and pip3
 sudo apt install -y python3.9 python3.9-venv python3.9-dev
 
@@ -18,9 +21,6 @@ sudo python3.9 get-pip.py
 # aliasing python and pip
 echo "alias python='python3.9'" >> ~/.bash_aliases
 echo "alias pip='pip3.9'" >> ~/.bash_aliases
-
-# downloads test-resources
-sudo apt install -y python3-testresources
 
 # deletes get-pip.py
 rm -rf get-pip.py
