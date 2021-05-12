@@ -19,5 +19,9 @@ sudo python3.9 get-pip.py
 echo "alias python='python3.9'" >> ~/.bash_aliases
 echo "alias pip='pip3.9'" >> ~/.bash_aliases
 
+# downloads test-resources
+sudo apt install -y python3-testresources
+
 # deletes get-pip.py
 rm -rf get-pip.py
+
