@@ -15,7 +15,7 @@ sudo apt install -y python3-testresources
 # installs python3.9 and pip3
 sudo apt install -y python3.9 python3.9-venv python3.9-dev
 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3.9 get-pip.py
 
 # aliasing python and pip
@@ -24,5 +24,12 @@ echo "alias pip='pip3.9'" >> ~/.bash_aliases
 
 # deletes get-pip.py
 rm -rf get-pip.py
+
+# restarting shell source
+if [[ "$SHELL" == "/bin/bash" ]]; then
+	source ~/.bashrc
+elif [[ "$SHELL" == "/bin/zsh" ]]; then
+	source ~/.zshrc
+fi
 
 printf "\n\nPython3.9 and pip has been installed successfully. Enjoy! :)\n\n"
