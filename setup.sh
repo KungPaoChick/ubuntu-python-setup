@@ -15,7 +15,7 @@ sudo apt install -y python3-testresources
 # installs python3.9 and pip3
 sudo apt install -y python3.9 python3.9-venv python3.9-dev
 
-# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3.9 get-pip.py
 
 # aliasing python and pip
